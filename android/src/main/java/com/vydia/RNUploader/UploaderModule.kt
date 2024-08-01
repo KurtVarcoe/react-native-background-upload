@@ -62,7 +62,7 @@ class UploaderModule(val reactContext: ReactApplicationContext) : ReactContextBa
   private fun configureUploadServiceHTTPStack(options: ReadableMap, promise: Promise) {
     var followRedirects = true
     var followSslRedirects = true
-    var retryOnConnectionFailure = true
+    var retryOnConnectionFailure = false
     var connectTimeout = 1
     var writeTimeout = 30
     var readTimeout = 30
